@@ -1,7 +1,46 @@
-.container {
-  max-width: 800px;
-  padding: 30 !important;
-  font-family: Arial, sans-serif;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #081427;
+  color: white;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  background-color: #0D1F39;
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.job, .project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -17,25 +56,30 @@
 
 button {
   width: 100%;
-}
-
-.contact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  background-color: #1d2635;
+  color: #4ADEDD;
 }
 
 .contact p {
   margin: 5px 0;
 }
 
-h1, h2, h3, h4 {
-  color: #0033cc;
+h1 {
+  font-size: 2em;
+  color: white;
+}
+
+h2, h3, h4, a {
+  color: #4ADEDD;
 }
 
 h3 {
+  border-bottom-width: 80%;
+  border-bottom-color: #4ADEDD;
+  border-bottom-style: solid;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 20px;
+
 }
 
 section {
