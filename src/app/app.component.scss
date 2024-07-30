@@ -54,12 +54,6 @@
   height: 80px;
 }
 
-button {
-  width: 100%;
-  background-color: #1d2635;
-  color: #4ADEDD;
-}
-
 .contact p {
   margin: 5px 0;
 }
@@ -93,4 +87,18 @@ section {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+.contact-button {
+  min-width: 120px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #081427;
+  color: #4ADEDD;
+}
+
+.contact-icon {
+  margin-right: 3px;
 }
