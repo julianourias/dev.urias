@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #00ff88;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .jumbotron {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+}
+
+.dark-mode .section-title {
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.dark-mode .card {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.dark-mode .skill-badge {
+  background-color: #4a4a4a!important;
+  color: #ffffff!important;
+}
+
+.dark-mode footer {
+  background: #212121;
+}
+
+.jumbotron {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.section-title {
+  color: var(--primary-color);
+  border-bottom: 2px solid;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-badge {
+  margin: 2px;
+  background-color: #e9ecef!important;
+  color: #495057!important;
+  transition: all 0.3s ease;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .dark-mode-toggle {
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
