@@ -1,279 +1,603 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Juliano Urias - Desenvolvedor Full-Stack | Currículo e Contato</title>
-  <base href="/" />
-  <meta name="description" content="Desenvolvedor Full-stack com expertise em tecnologias como Python, Angular, AWS, IA, PL/SQL, Java, e mais. Experiência profissional e acadêmica em projetos inovadores e com foco em boas práticas de desenvolvimento." />
-  <meta name="keywords" content="Juliano Urias, Desenvolvedor, Full-Stack, Software, Tecnologia, Currículo, Contato, Python, JavaScript, Angular, Inteligência Artificial" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-  <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="css/styles.css" rel="stylesheet" />
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Juliano Urias - Desenvolvedor Full-Stack | Currículo e Contato</title>
+    <base href="/" />
+    <meta name="description" content="Desenvolvedor Full-stack com expertise em tecnologias como Python, Angular, AWS, IA, PL/SQL, Java, e mais. Experiência profissional e acadêmica em projetos inovadores e com foco em boas práticas de desenvolvimento." />
+    <meta name="keywords" content="Juliano Urias, Desenvolvedor, Full-Stack, Software, Tecnologia, Currículo, Contato, Python, JavaScript, Angular, Inteligência Artificial" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css\styles.css">
 </head>
-<body class="dark-mode">
-  <button class="dark-mode-toggle" id="darkModeToggle">
-    <i class="fas fa-sun"></i>
-  </button>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
 
-  <!-- Cabeçalho com informações principais -->
-  <div class="jumbotron jumbotron-fluid text-center">
-    <div class="container">
-      <h1 class="display-4">Juliano Urias</h1>
-      <p class="lead">Desenvolvedor Full-Stack</p>
-      <div class="contact-info">
-        <div class="social-links">
-          <a href="https://github.com/julianourias" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/julianourias" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="assets/resume_juliano_urias.pdf" download><i class="fas fa-file-pdf"></i></a>
-        </div>
-      </div>
+    <div class="controls-container no-print flex gap-1 px-2 py-1 rounded-md bg-gray-100 dark:bg-gray-700 w-fit text-xs shadow-sm div-controls">
+      <button id="langPtBtn" class="control-button px-2 py-1 rounded-md bg-white dark:bg-gray-600 hover:bg-gray-200 dark:hover:bg-gray-500 transition-colors" title="Português">
+        PT
+      </button>
+      <button id="langEnBtn" class="control-button px-2 py-1 rounded-md bg-white dark:bg-gray-600 hover:bg-gray-200 dark:hover:bg-gray-500 transition-colors" title="English">
+        EN
+      </button>
+      <button id="darkModeToggle" class="control-button px-2 py-1 rounded-md bg-white dark:bg-gray-600 hover:bg-gray-200 dark:hover:bg-gray-500 transition-colors" title="Modo Escuro">
+        <i class="fas fa-moon text-gray-700 dark:text-gray-200"></i>
+      </button>
     </div>
-  </div>
 
-  <div class="container">
-    <!-- Resumo -->
-    <section class="mb-5">
-      <h2 class="section-title">Resumo</h2>
-      <p class="text-justify">
-        Desenvolvedor full-stack atuando há mais de 5 anos profissionalmente na área, com experiência em empresas líderes como IBM (atual) e UOL. Formado em Análise e Desenvolvimento de Sistemas e técnico em Eletrotécnica pelo IFPR. Certificado AWS Cloud Practitioner com diversos cursos qualificatórios.
-      </p>
-      <p class="text-justify">
-        Experiência em desenvolvimento completo de sites e aplicativos desde a concepção até produção. Domínio de múltiplas tecnologias front-end e back-end, com atuação em projetos de IA, sistemas embarcados e desenvolvimento mobile. Comunicativo e autodidata, com capacidade de aprendizado rápido em novas tecnologias.
-      </p>
-    </section><!-- Seção de Contatos -->
 
-    <section class="mb-5">
-      <h2 class="section-title">Contatos</h2>
-      <p><strong>Telefone:</strong> +55 43 98488-1180</p>
-      <p><strong>Email:</strong> dev.urias@gmail.com</p>
-      <p><strong>Endereço:</strong> Ivaiporã, Paraná, Brasil</p>
-    </section>
+    <div class="container mx-auto px-4 py-8 max-w-6xl print-padding">
 
-    <!-- Habilidades -->
-    <section class="mb-5">
-      <h2 class="section-title">Habilidades Técnicas</h2>
-      <div class="row">
-        <div class="col-md-3 mb-4">
-          <h5>Linguagens</h5>
-          <div>
-            <span class="badge skill-badge">Python</span>
-            <span class="badge skill-badge">JavaScript</span>
-            <span class="badge skill-badge">Java</span>
-            <span class="badge skill-badge">SQL</span>
-            <span class="badge skill-badge">C</span>
-            <span class="badge skill-badge">Pascal</span>
-            <span class="badge skill-badge">Dart</span>
+        <div class="flex flex-col md:flex-row items-center mb-8 gap-6 md:gap-8">
+
+             <div class="flex-shrink-0 no-print">
+                  <img class="w-28 h-28 md:w-32 md:h-32 rounded-full shadow-md border-4 border-white dark:border-gray-700"
+                       src="assets\img\profile.png"
+                       alt="Foto de Juliano Urias"
+                       onerror="this.onerror=null; this.src='https://placehold.co/128x128/3b82f6/FFFFFF?text=JU'; this.alt='Placeholder for Juliano Urias'" />
+             </div>
+
+             <div class="flex-grow flex flex-col md:flex-row justify-between items-center md:items-start w-full">
+
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                  <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Juliano Urias</h1>
+                  <p class="text-lg text-gray-600 dark:text-gray-400 lang-pt">Desenvolvedor Full-Stack</p>
+                  <p class="text-lg text-gray-600 dark:text-gray-400 lang-en">Full Stack Developer</p>
+
+                  <!-- Ícones centralizados no mobile -->
+                  <div class="flex justify-center md:justify-start gap-3 mt-2 text-xl text-gray-700 dark:text-gray-200">
+                    <a href="https://github.com/julianourias" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/julianourias" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="assets/resume_juliano_urias.pdf" download><i class="fas fa-file-pdf"></i></a>
+                  </div>
+                </div>
+
+
+                 <div class="flex flex-col items-center md:items-end gap-1 text-sm text-gray-700 dark:text-gray-300">
+                     <div class="flex items-center gap-2">
+                         <i class="fas fa-map-marker-alt text-blue-500 dark:text-blue-400 w-4 text-center"></i>
+                         <a href="https://maps.app.goo.gl/Gazyrt7MHJW96tSb6" target="_blank" class="lang-pt hover:text-blue-600 dark:hover:text-blue-300">Ivaiporã, PR, Brasil</a>
+                         <a href="https://maps.app.goo.gl/Gazyrt7MHJW96tSb6" target="_blank" class="lang-en hover:text-blue-600 dark:hover:text-blue-300">Ivaiporã, PR, Brazil</a>
+                     </div>
+                     <div class="flex items-center gap-2">
+                         <i class="fas fa-phone text-blue-500 dark:text-blue-400 w-4 text-center"></i>
+                         <a href="tel:+5543984881180" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-300">+55 (43) 98488-1180</a>
+                     </div>
+                     <div class="flex items-center gap-2">
+                         <i class="fas fa-envelope text-blue-500 dark:text-blue-400 w-4 text-center"></i>
+                         <a href="mailto:dev.urias@gmail.com" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-300">dev.urias@gmail.com</a>
+                     </div>
+                 </div>
+             </div>
+        </div>
+
+        <!-- RESUMO -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-4 sm:p-6 mb-6">
+          <!-- Título PT -->
+          <h2 class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-pt">
+            <i class="fas fa-user text-blue-500 dark:text-blue-400 text-base sm:text-lg"></i>
+            <span>Resumo</span>
+          </h2>
+
+          <!-- Conteúdo PT -->
+          <div class="space-y-4 mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed lang-pt">
+            <div>
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100">Experiência Profissional</h3>
+              <p>
+                Desenvolvedor full-stack atuando há mais de 5 anos profissionalmente na área, com experiência em empresas líderes no mercado como IBM (atual) e UOL. Focado na entrega de valor, já atuei com uma gama grande de tecnologias, de acordo com a necessidade do negócio.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100">Formação</h3>
+              <p>
+                Sou formado em Análise e Desenvolvimento de Sistemas, Técnico em Eletrotécnica e estou cursando Especialização em Inteligência Artificial.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100">Certificações</h3>
+              <p>
+                Possuo certificação AWS (Cloud Practitioner), além de diversos cursos qualificatórios na área de programação.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100">Perfil Pessoal</h3>
+              <p>
+                Já desenvolvi sites e aplicativos completos, do zero até produção, tanto profissional quanto academicamente. Sou bastante comunicativo e aprendo de forma autodidata. Sempre sigo me atualizando de novas tecnologias e gosto de assumir desafios.
+              </p>
+            </div>
+          </div>
+
+          <!-- Título EN -->
+          <h2 class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 mt-6 lang-en">
+            <i class="fas fa-user text-blue-500 dark:text-blue-400 text-base sm:text-lg"></i>
+            <span>Summary</span>
+          </h2>
+
+          <!-- Conteúdo EN -->
+          <div class="space-y-4 mt-4 text-sm sm:text-base text-gray-700 dark:text-gray-300 leading-relaxed lang-en">
+            <div>
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100">Professional Experience</h3>
+              <p>
+                Full-stack developer with over 5 years of professional experience, having worked at market-leading companies such as IBM (current) and UOL. Value-driven professional with expertise across a wide range of technologies tailored to business needs.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100">Education</h3>
+              <p>
+                I have a degree in Systems Analysis and Development, a technical qualification in Electrotechnics, and I am currently pursuing a specialization in Artificial Intelligence.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100">Certifications</h3>
+              <p>
+                I hold an AWS (Cloud Practitioner) certification, as well as several qualification courses in the field of programming.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-gray-900 dark:text-gray-100">Personal Profile</h3>
+              <p>
+                Experienced in developing complete websites and applications from scratch to production, both professionally and academically. Strong communicator and self-directed learner. Continuously updating my skills with new technologies and eager to take on challenges.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="col-md-3 mb-4">
-          <h5>Front-end</h5>
-          <div>
-            <span class="badge skill-badge">Angular</span>
-            <span class="badge skill-badge">React</span>
-            <span class="badge skill-badge">Vue.js</span>
-            <span class="badge skill-badge">Next.js</span>
-            <span class="badge skill-badge">React Native</span>
-            <span class="badge skill-badge">Delphi</span>
-          </div>
+        <!-- HABILIDADES TÉCNICAS -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-pt">
+                <i class="fas fa-code text-blue-500 dark:text-blue-400"></i> <span>Habilidades Técnicas</span>
+            </h2>
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-en">
+                <i class="fas fa-code text-blue-500 dark:text-blue-400"></i> <span>Technical Skills</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div>
+                     <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300 lang-pt">Linguagens</h3>
+                     <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300 lang-en">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                        <span class="skill-pill bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="skill-pill bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">Java</span>
+                        <span class="skill-pill bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                        <span class="skill-pill bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">C</span>
+                        <span class="skill-pill bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">Pascal</span>
+                        <span class="skill-pill bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">Dart</span>
+                    </div>
+                </div>
+                <div>
+                     <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300 lang-pt">Frameworks e Bibliotecas</h3>
+                     <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300 lang-en">Frameworks & Libraries</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">FastAPI</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">Flask</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">Angular</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">Spring</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">Vue.js</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">Next.js</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">Pandas</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">React Native</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                        <span class="skill-pill bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm font-medium">Delphi</span>
+                    </div>
+                </div>
+                <div>
+                     <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300 lang-pt">Bancos de Dados</h3>
+                     <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300 lang-en">Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                        <span class="skill-pill bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm font-medium">PL/SQL</span>
+                        <span class="skill-pill bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm font-medium">PostgreSQL</span>
+                        <span class="skill-pill bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+                        <span class="skill-pill bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm font-medium">Oracle DB</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300">AI</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm font-medium">RAG</span>
+                        <span class="skill-pill bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm font-medium">OpenAI API</span>
+                        <span class="skill-pill bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-3 py-1 rounded-full text-sm font-medium">Model Execution</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300">DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">Kubernetes</span>
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">AWS</span>
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">GCP</span>
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">Heroku</span>
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">Jenkins</span>
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">Git/GitHub</span>
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">Subversion (SVN)</span>
+                        <span class="skill-pill bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm font-medium">Bitbucket/Stash</span>
+                    </div>
+                </div>
+                <div>
+                     <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300 lang-pt">Logs, Monitoramento e Outros</h3>
+                     <h3 class="font-semibold text-lg mb-3 text-gray-700 dark:text-gray-300 lang-en">Logging, Monitoring & Others</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-pill bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm font-medium">Splunk</span>
+                        <span class="skill-pill bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm font-medium">Kibana</span>
+                        <span class="skill-pill bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm font-medium">AWS CloudWatch</span>
+                         <span class="skill-pill bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm font-medium">Google Analytics</span>
+                         <span class="skill-pill bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm font-medium">Log Center</span>
+                        <span class="skill-pill bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm font-medium">Linux</span>
+                        <span class="skill-pill bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm font-medium">Arduino</span>
+                        <span class="skill-pill bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-3 py-1 rounded-full text-sm font-medium">ESP32</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-md-3 mb-4">
-          <h5>Back-end/DevOps</h5>
-          <div>
-            <span class="badge skill-badge">Node.js</span>
-            <span class="badge skill-badge">Spring</span>
-            <span class="badge skill-badge">Docker</span>
-            <span class="badge skill-badge">Kubernetes</span>
-            <span class="badge skill-badge">AWS</span>
-            <span class="badge skill-badge">GCP</span>
-            <span class="badge skill-badge">Jenkins</span>
-          </div>
+        <!-- XP -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8">
+             <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-pt">
+                 <i class="fas fa-briefcase text-blue-500 dark:text-blue-400"></i> <span>Experiência Profissional</span>
+             </h2>
+             <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-en">
+                 <i class="fas fa-briefcase text-blue-500 dark:text-blue-400"></i> <span>Professional Experience</span>
+             </h2>
+
+            <div class="space-y-8">
+
+                <div class="relative timeline-item pl-8 lang-pt">
+                     <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Desenvolvedor de Aplicações, Consultoria</h3>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">IBM, Brasil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Ago. 2024 - Presente</span>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                        Atuação no projeto Petrobrás desenvolvendo aplicação crítica para o setor de offloading de petróleo, trabalhando em estreita colaboração com o cliente desde o planejamento até a entrega. Modernização de sistemas legados utilizando Python (FastAPI - arquitetura hexagonal), Angular e Oracle DB.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python (FastAPI)</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Angular</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Oracle DB</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">PL/SQL</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">AWS</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">SonarQube</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">pytest</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">JWT</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Microsoft Graph API</span>
+                    </div>
+                </div>
+
+                 <div class="relative timeline-item pl-8 lang-en">
+                     <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Application Developer, Consulting</h3>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">IBM, Brazil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Aug. 2024 - Present</span>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Worked on the Petrobrás project, developing a critical application for the oil offloading sector, closely collaborating with the client from planning to delivery. Modernized legacy systems using Python (FastAPI hexagonal architecture), Angular, and Oracle DB.
+                     </p>
+                    <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python (FastAPI)</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Angular</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Oracle DB</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">PL/SQL</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">AWS</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">SonarQube</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">pytest</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">JWT</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Microsoft Graph API</span>
+                    </div>
+                </div>
+
+
+                <div class="relative timeline-item pl-8 lang-pt">
+                     <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Engenheiro de Software, Equipe de Inovação</h3>
+                         <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">UOL, Brasil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Nov. 2023 - Jun. 2024</span>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                        Fiz parte da equipe de inovação do UOL, responsável pelo desenvolvimento de novos produtos dentro da empresa. Colaborei com desenvolvedores e analistas de inovação, interagindo com várias equipes internas para entregar soluções inovadoras.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">AI</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">React (Next.js)</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">AWS</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Kubernetes</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Jenkins</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">MySQL</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Firebase</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Linux</span>
+                    </div>
+                </div>
+
+                <div class="relative timeline-item pl-8 lang-en">
+                     <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Software Engineer, Innovation Team</h3>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">UOL, Brazil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Nov. 2023 - Jun. 2024</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Part of UOL's Innovation team, responsible for developing new products. Collaborated with developers and innovation analysts, interacting with various internal teams to deliver cutting-edge solutions.
+                     </p>
+                    <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">AI</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">React (Next.js)</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">AWS</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Kubernetes</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Jenkins</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">MySQL</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Firebase</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Linux</span>
+                    </div>
+                </div>
+
+
+                <div class="relative timeline-item pl-8 lang-pt">
+                    <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Engenheiro de Software, Equipe UOL Ads</h3>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">UOL, Brasil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Mai. 2022 - Out. 2023</span>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                        Atuei no time de desenvolvimento do UOL Ads, a plataforma de publicidade self-service do UOL. Contribuí para manutenção e expansão da plataforma de mídia programática, atuando como Full Stack.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Java (Spring)</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Vue.js</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Node.js</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Angular</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Docker</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Kubernetes</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Jenkins</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">MySQL</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">RabbitMQ</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Linux</span>
+                    </div>
+                </div>
+
+                <div class="relative timeline-item pl-8 lang-en">
+                     <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Software Engineer, UOL Ads Team</h3>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">UOL, Brazil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>May 2022 - Oct. 2023</span>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                        Contributed to the UOL Ads development team, the self-service advertising platform for UOL. Played a full-stack role in maintaining and expanding UOL's programmatic media platform.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Java (Spring)</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Vue.js</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Node.js</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Angular</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Docker</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Kubernetes</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Jenkins</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">MySQL</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">RabbitMQ</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Linux</span>
+                    </div>
+                </div>
+
+
+                <div class="relative timeline-item pl-8 lang-pt">
+                    <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Programador Full Stack, Analista de Sistemas</h3>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">KMM by nstech, Brasil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Abr. 2021 - Mai. 2022</span>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                        Desenvolvi soluções/customizações para grandes empresas de logística, envolvendo regras de negócio para transporte ferroviário, portuário e rodoviário.
+                    </p>
+                     <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Angular</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">TypeScript</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">CSS</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">utPLSQL</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Java</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Docker</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Apache Airflow</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GIT/GitHub</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">SVN</span>
+                     </div>
+                </div>
+
+                <div class="relative timeline-item pl-8 lang-en">
+                     <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Full-Stack Programmer, Systems Analyst</h3>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">KMM by nstech, Brazil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Apr. 2021 - May 2022</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Developed solutions/customizations for major logistics companies in Brazil, involving business rules for railway, port, and road transport.
+                     </p>
+                    <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Angular</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">TypeScript</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">CSS</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">utPLSQL</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Java</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Docker</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Apache Airflow</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GIT/GitHub</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">SVN</span>
+                     </div>
+                </div>
+
+
+                <div class="relative timeline-item pl-8 lang-pt">
+                     <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Programador Full Stack, Analista de Sistemas</h3>
+                         <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Dominus Software, Paraná, Brasil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Jan. 2020 - Abr. 2021</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Atuei como desenvolvedor Full Stack, mantendo aplicativo de emissão de notas fiscais e desenvolvendo novos aplicativos. Responsável pela manutenção do ERP e PDV (correções e novas funcionalidades).
+                    </p>
+                     <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">React Native</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Node.js</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Delphi</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GIT/GitHub</span>
+                     </div>
+                </div>
+
+                 <div class="relative timeline-item pl-8 lang-en">
+                     <div class="timeline-dot"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Full-Stack Programmer, Systems Analyst</h3>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Dominus Software, Paraná, Brazil</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Jan. 2020 - Apr. 2021</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                        Worked as a full-stack developer maintaining a tax invoice issuance app and developing new applications. Responsible for maintaining the ERP and POS systems (bug fixes and new features).
+                    </p>
+                     <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">React Native</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Node.js</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Delphi</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GIT/GitHub</span>
+                     </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-md-3 mb-4">
-          <h5>Outras</h5>
-          <div>
-            <span class="badge skill-badge">Splunk</span>
-            <span class="badge skill-badge">MySQL</span>
-            <span class="badge skill-badge">Firebase</span>
-            <span class="badge skill-badge">OpenAI API</span>
-            <span class="badge skill-badge">Arduino</span>
-            <span class="badge skill-badge">Apache Airflow</span>
-          </div>
+        <!-- EDUCAÇÃO -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-pt">
+                 <i class="fas fa-graduation-cap text-blue-500 dark:text-blue-400"></i> <span>Educação</span>
+             </h2>
+             <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-en">
+                 <i class="fas fa-graduation-cap text-blue-500 dark:text-blue-400"></i> <span>Education</span>
+             </h2>
+
+            <div class="space-y-4">
+
+                <div class="flex flex-col md:flex-row md:justify-between lang-pt">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Especialização em Inteligência Artificial, Pós-graduação Lato Sensu</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Universidade Tecnológica Federal do Paraná - UTFPR</p>
+                    </div>
+                    <div class="text-gray-500 dark:text-gray-400 mt-1 md:mt-0 text-sm md:text-right whitespace-nowrap"><span>Cursando</span></div>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:justify-between lang-en">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Specialization in Artificial Intelligence, Lato Sensu Post Graduate</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Federal Technological University of Paraná - UTFPR</p>
+                    </div>
+                    <div class="text-gray-500 dark:text-gray-400 mt-1 md:mt-0 text-sm md:text-right whitespace-nowrap"><span>In Progress</span></div>
+                </div>
+
+
+                <div class="flex flex-col md:flex-row md:justify-between lang-pt">
+                    <div>
+                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Análise e Desenvolvimento de Sistemas, Curso Superior</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Faculdades Integradas do Vale do Ivaí - Univale</p>
+                    </div>
+                    <div class="text-gray-500 dark:text-gray-400 mt-1 md:mt-0 text-sm md:text-right whitespace-nowrap"><span>2021 - 2024</span></div>
+                </div>
+
+                 <div class="flex flex-col md:flex-row md:justify-between lang-en">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Degree in Systems Analysis and Development</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Integrated Colleges of Vale do Ivaí - Univale</p>
+                    </div>
+                    <div class="text-gray-500 dark:text-gray-400 mt-1 md:mt-0 text-sm md:text-right whitespace-nowrap"><span>2021 - 2024</span></div>
+                </div>
+
+
+                <div class="flex flex-col md:flex-row md:justify-between lang-pt">
+                    <div>
+                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Técnico em Eletrotécnica</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Instituto Federal do Paraná - IFPR</p>
+                    </div>
+                    <div class="text-gray-500 dark:text-gray-400 mt-1 md:mt-0 text-sm md:text-right whitespace-nowrap"><span>2017 - 2021</span></div>
+                </div>
+
+                 <div class="flex flex-col md:flex-row md:justify-between lang-en">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Technical High School in Electrotechnics</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">Federal Institute of Paraná - IFPR</p>
+                    </div>
+                    <div class="text-gray-500 dark:text-gray-400 mt-1 md:mt-0 text-sm md:text-right whitespace-nowrap"><span>2017 - 2021</span></div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Experiência -->
-    <section class="mb-5">
-      <h2 class="section-title">Experiência Profissional</h2>
+        <!-- PROJETO -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-pt">
+                 <i class="fas fa-project-diagram text-blue-500 dark:text-blue-400"></i> <span>Projetos Acadêmicos</span>
+             </h2>
+             <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100 border-b dark:border-gray-700 pb-2 flex items-center gap-2 lang-en">
+                 <i class="fas fa-project-diagram text-blue-500 dark:text-blue-400"></i> <span>Academic Projects</span>
+             </h2>
 
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Desenvolvedor de Aplicações - IBM (Consultoria)</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Presente - Ago/2024</h6>
-          <ul>
-            <li>Atuação em projeto para Petrobras como full-stack (Python/Angular)</li>
-            <li>Desenvolvimento e manutenção de aplicações corporativas</li>
-            <li>Tecnologias: Python, Angular, PL/SQL, AWS</li>
-          </ul>
+            <div class="space-y-6">
+
+                <div class="lang-pt">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Projeto Open-Source, txt-to-notion: Integração de Arquivos com Notion</h3>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Jul. 2024 - Dez. 2024</span>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Desenvolvi solução open-source para sincronização bidirecional entre arquivos .txt e Notion (API, GUI, versionamento, tratamento de conflitos, DB SQLite, build Windows). Licença GPL.
+                     </p>
+                     <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Notion API</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">PyQt6</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">SQLite</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">PyInstaller</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">JWT</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GCP</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Git</span>
+                    </div>
+                </div>
+
+                <div class="lang-en">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Open-Source Project, txt-to-notion: File Integration Software for Notion</h3>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Jul. 2024 - Dec. 2024</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                        Developed open-source solution for bidirectional sync between .txt files and Notion (API integration, GUI, versioning, conflict resolution, SQLite DB, Windows build). GPL licensed.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Notion API</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">PyQt6</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">SQLite</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">PyInstaller</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">JWT</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GCP</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Git</span>
+                    </div>
+                </div>
+
+
+                 <div class="lang-pt pt-6 border-t border-gray-200 dark:border-gray-700 mt-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Projeto de Extensão, Agro Serviços (Univale)</h3>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Jul. 2023 - Abr. 2024</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Desenvolvi POC (app, servidor, landing page) para conectar proprietários rurais e prestadores de serviço (Linkedin do Agro). Implantei em agroservicos.com.br.
+                     </p>
+                    <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Flutter</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python (Flask)</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GCP</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">NGINX</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Firebase</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Bootstrap</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GitHub Pages</span>
+                     </div>
+                </div>
+
+                 <div class="lang-en pt-6 border-t border-gray-200 dark:border-gray-700 mt-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Extension Project, Agro Serviços (Univale)</h3>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Jul. 2023 - Apr. 2024</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Developed a POC (app, server, landing page) for connecting rural landowners and service providers (LinkedIn for Agribusiness). Deployed at agroservicos.com.br.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Flutter</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Python (Flask)</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GCP</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">NGINX</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Firebase</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Bootstrap</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GitHub Pages</span>
+                     </div>
+                </div>
+
+
+                 <div class="lang-pt pt-6 border-t border-gray-200 dark:border-gray-700 mt-6">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Projeto de Extensão, Pocket Physics (IFPR)</h3>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Jul. 2020 - Mar. 2021</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Projeto de extensão (com bolsa) para criar kits didáticos (protótipo de painel solar). Desenvolvi app para leitura de dados via API conectada ao Wemos D1.
+                     </p>
+                     <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">React Native</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Node.js</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Arduino IDE</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GIT/GitHub</span>
+                     </div>
+                </div>
+
+                 <div class="lang-en pt-6 border-t border-gray-200 dark:border-gray-700 mt-6">
+                     <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Extension Project, Pocket Physics (IFPR)</h3>
+                    </div>
+                    <div class="flex items-center text-gray-500 dark:text-gray-400 text-sm mb-3">
+                        <i class="far fa-calendar-alt mr-2"></i> <span>Jul. 2020 - Mar. 2021</span>
+                    </div>
+                     <p class="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-3">
+                         Scholarship extension project creating educational kits (solar panel prototype). Developed an app to read prototype data via an API connected to a Wemos D1 board.
+                     </p>
+                    <div class="flex flex-wrap gap-1">
+                         <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">React Native</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Node.js</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">Arduino IDE</span> <span class="skill-pill bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-0.5 rounded text-xs">GIT/GitHub</span>
+                    </div>
+                 </div>
+            </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Analista de Desenvolvimento - Mutant (Equipe de IA)</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Ago/2024 - Jul/2024</h6>
-          <ul>
-            <li>Desenvolvimento de soluções de IA para cliente Vivo (Telefónica)</li>
-            <li>Implementação de pipelines de dados e modelos de machine learning</li>
-            <li>Tecnologias: Python, React, Kubernetes, GitLab, MongoDB, LangChain</li>
-          </ul>
-        </div>
-      </div>
+    </div>
 
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Engenheiro de Software - UOL (Equipe de Inovação)</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Jun/2024 - Nov/2023</h6>
-          <ul>
-            <li>Desenvolvimento de novos produtos com tecnologias emergentes</li>
-            <li>Integração de soluções de IA e análise de dados</li>
-            <li>Tecnologias: Python, React (Next), AWS, Kubernetes, Jenkins, MySQL</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Engenheiro de Software - UOL Ads</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Out/2023 - Mai/2022</h6>
-          <ul>
-            <li>Manutenção e expansão da plataforma de mídia programática</li>
-            <li>Desenvolvimento full-stack da plataforma de publicidade self-service</li>
-            <li>Tecnologias: Java (Spring), Vue.js, Node.js, Docker, RabbitMQ</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Programador Full Stack - KMM by nstech</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Mai/2022 - Abr/2021</h6>
-          <ul>
-            <li>Desenvolvimento de soluções para empresas de logística</li>
-            <li>Implementação de regras de negócio para transporte multimodal</li>
-            <li>Tecnologias: Angular, Python, Java, Apache Airflow, utPLSQL</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Programador Full Stack - Dominus Software</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Abr/2021 - Jan/2020</h6>
-          <ul>
-            <li>Manutenção de aplicativo de emissão de notas fiscais</li>
-            <li>Desenvolvimento de novos módulos para ERP e PDV</li>
-            <li>Tecnologias: React Native, Node.js, Delphi</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Educação -->
-    <section class="mb-5">
-      <h2 class="section-title">Educação</h2>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Tecnologia em Análise e Desenvolvimento de Sistemas</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Univale - 2021 a 2024</h6>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Técnico em Eletrotécnica</h5>
-          <h6 class="card-subtitle mb-2 text-muted">IFPR - 2017 a 2021</h6>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certificações -->
-    <section class="mb-5">
-      <h2 class="section-title">Certificações</h2>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">AWS Certified Cloud Practitioner</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Amazon Web Services</h6>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-body">
-          <h5 class="card-title">EF SET English (B2 - Upper Intermediate)</h5>
-          <h6 class="card-subtitle mb-2 text-muted">EF SET</h6>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projetos -->
-    <section class="mb-5">
-      <h2 class="section-title">Projetos Acadêmicos</h2>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Agro Serviços - Plataforma para Agronegócio</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Univale - 2023/2024</h6>
-          <ul>
-            <li>Desenvolvimento completo de aplicativo, servidor e landing page</li>
-            <li>Implementação de infraestrutura com GCP e NGINX</li>
-            <li>Tecnologias: Flutter, Flask, Firebase, Bootstrap</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Pocket Physics - Kits Didáticos</h5>
-          <h6 class="card-subtitle mb-2 text-muted">IFPR - 2020/2021</h6>
-          <ul>
-            <li>Desenvolvimento de aplicativo para monitoramento de placas solares</li>
-            <li>Integração com hardware através de API personalizada</li>
-            <li>Tecnologias: React Native, Node.js, Arduino</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Olimpíadas de Robótica</h5>
-          <h6 class="card-subtitle mb-2 text-muted">IFPR - 2017 e 2019</h6>
-          <ul>
-            <li>Desenvolvimento de robôs autônomos para competições</li>
-            <li>Campeão nas categorias de seguidor de linha</li>
-            <li>Tecnologias: Arduino, Linguagem C</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <footer class="text-center">
-    <p>&copy; 2024 Juliano Urias. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="js/scripts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js\scripts.js"></script>
 </body>
 </html>
